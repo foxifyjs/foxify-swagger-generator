@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+var Foxify = require('foxify');
+var router = Foxify.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

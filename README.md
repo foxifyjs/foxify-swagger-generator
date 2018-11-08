@@ -1,17 +1,17 @@
-### Express Swagger Generator
+### Foxify Swagger Generator
 
 #### Installation
 
 ```
-npm i express-swagger-generator --save-dev
+npm i -D foxify-swagger-generator
 ```
 
 #### Usage
 
 ```
-const express = require('express');
-const app = express();
-const expressSwagger = require('express-swagger-generator')(app);
+const Foxify = require('foxify');
+const app = new Foxify();
+const foxifySwagger = require('foxify-swagger-generator')(app);
 
 let options = {
     swaggerDefinition: {
@@ -39,8 +39,8 @@ let options = {
     basedir: __dirname, //app absolute path
     files: ['./routes/**/*.js'] //Path to the API handle folder
 };
-expressSwagger(options)
-app.listen(3000);
+foxifySwagger(options)
+app.start();
 ```
 
 Open http://<app_host>:<app_port>/api-docs in your browser to view the documentation.
@@ -110,4 +110,4 @@ For model definitions:
 
 #### More
 
-This module is based on [express-swaggerize-ui](https://github.com/pgroot/express-swaggerize-ui) and [Doctrine-File](https://github.com/researchgate/doctrine-file)
+This module is based on [foxify-swaggerize-ui](https://github.com/foxifyjs/foxify-swaggerize-ui) and [Doctrine-File](https://github.com/researchgate/doctrine-file)

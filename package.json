@@ -1,39 +1,39 @@
 {
-  "name": "express-swagger-generator",
-  "version": "1.1.10",
-  "description": "Generates swagger doc & ui based on express existing routes.",
+  "name": "foxify-swagger-generator",
+  "version": "1.0.0",
+  "description": "Generates swagger doc & ui based on foxify existing routes.",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/pgroot/express-swagger-generator.git"
+    "url": "https://github.com/foxifyjs/foxify-swagger-generator.git"
   },
   "keywords": [
-    "express",
+    "foxify",
     "swagger",
     "api",
     "swagger-ui",
     "restful"
   ],
-  "author": "https://github.com/pgroot/express-swagger-generator/graphs/contributors",
+  "author": "Foxify",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgroot/express-swagger-generator/issues"
+    "url": "https://github.com/foxifyjs/foxify-swagger-generator/issues"
   },
-  "homepage": "https://github.com/pgroot/express-swagger-generator",
+  "homepage": "https://github.com/foxifyjs/foxify-swagger-generator",
   "dependencies": {
-    "doctrine": "^2.0.0",
-    "glob": "^7.0.3",
+    "doctrine": "^2.1.0",
+    "glob": "^7.1.3",
     "recursive-iterator": "^2.0.3",
-    "swagger-parser": "^5.0.5",
-    "doctrine-file": "^1.0.2",
-    "express-swaggerize-ui": "^1.0.2"
+    "swagger-parser": "^5.0.6",
+    "doctrine-file": "^1.0.3",
+    "foxify-swaggerize-ui": "^1.0.0"
   },
   "devDependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4",
+    "body-parser": "^1.18.3",
+    "foxify": "^0.10.10",
     "mocha": "^3.2.0",
-    "mocha-jscs": "^5.0.0",
+    "mocha-jscs": "^5.0.1",
     "mocha-jshint": "^2.3.1",
     "supertest": "^2.0.1"
   }
